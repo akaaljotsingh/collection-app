@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { MarketComponent } from './market/market.component';
+import { CollectionComponent } from './collection/collection.component';
+import { CollectableService } from './shared/collectable.service';
+import { HeaderComponent } from './header.component';
+import { routing } from './app-routing';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarketComponent,
+    CollectionComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
-  providers: [],
+  providers: [CollectableService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {  }

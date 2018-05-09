@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    padding: 30px;
+}
+.badge {
+    float: right;
+    margin-top: 10px;
+}
+ul {
+    margin-bottom: 20px !important;
+}
+.nav-pills li a {
+    margin-right: 20px;
+}
